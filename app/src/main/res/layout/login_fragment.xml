@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="31dp"
+            android:textColor="#19DD86"
+            android:textStyle="bold"
+            android:text="Bienvenid@"
+            android:fontFamily="@font/times_roman_font"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#9F9F9F"
+            android:fontFamily="@font/times_roman_font"
+            android:textStyle="bold"
+            android:text="Accede para continuar"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
+            android:drawableLeft="@drawable/ic_outline_email_24"
+            android:drawablePadding="5dp"
+            android:inputType="textPersonName"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="5dp"
+            android:inputType="textPersonName"
+            android:hint="Contraseña" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#19DD86"
+            android:fontFamily="@font/times_roman_font"
+            android:textStyle="bold"
+            android:text="Ingresar" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#232323"
+            android:textStyle="bold"
+            android:fontFamily="@font/times_roman_font"
+            android:text="Registrate" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
