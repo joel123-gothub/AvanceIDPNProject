@@ -4,28 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".Fragments.FragmentRegistro"
     >
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/TituloRegistroPlastico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/aniadir_text"
+            android:fontFamily="@font/times_roman_font"            android:text="@string/aniadir_text"
             android:textAlignment="center"
-            android:textColor="#3F51B5"
+            android:textColor="#000"
+            android:textStyle="bold"
             android:textSize="24sp"
+            android:layout_marginTop="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +35,6 @@
             android:layout_width="65dp"
             android:layout_height="81dp"
             android:layout_marginTop="40dp"
-            android:layout_weight="1"
             android:scaleX="2"
             android:scaleY="2"
             app:srcCompat="@drawable/take_photo_background" />
@@ -45,12 +43,13 @@
             android:id="@+id/btnCamara"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:gravity="center_horizontal"
-            android:text="@string/btn_foto_plastic"
+            android:gravity="center"
+            android:text="Agregar imagen"
+            android:backgroundTint="#19DD86"
+            android:fontFamily="@font/times_roman_font"
+            android:textStyle="bold"
             android:textSize="12sp" />
 
         <EditText
@@ -58,73 +57,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:ems="10"
-            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
             android:hint="@string/hint_nombre_plastic"
             android:inputType="textPersonName"
-            android:textColorHint="#2196F3"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txtFecPlastic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:ems="10"
+            android:textSize="15dp"
             android:hint="@string/hint_fecha_plastic"
+            android:fontFamily="@font/times_roman_font"
             android:inputType="date"
-            android:textColorHint="#2196F3"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txtOrigenPlastic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:ems="10"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
             android:hint="@string/hint_origen_plastic"
             android:inputType="textPersonName"
-            android:textColorHint="#2196F3"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txtUbicationPlastic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:ems="10"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
             android:hint="@string/hint_ubicación_plastic"
             android:inputType="textPersonName"
-            android:textColorHint="#2196F3"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txtDescriptionPlastic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:ems="10"
+            android:textSize="15dp"
+            android:fontFamily="@font/times_roman_font"
             android:hint="@string/hint_descripción_plastic"
             android:inputType="textMultiLine|textPersonName"
             android:lines="5"
-            android:textColorHint="#2196F3"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Spinner
             android:id="@+id/categoria_plastic"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
+            android:layout_height="30dp"
             android:backgroundTintMode="add"
             android:entries="@array/strCategorias"
             android:foregroundTint="#3F51B5"
+            android:fontFamily="@font/times_roman_font"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
@@ -132,10 +124,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:text="@string/btn_registrar_plastic"
-            android:textSize="16sp" />
+            android:backgroundTint="#19DD86"
+            android:fontFamily="@font/times_roman_font"
+            android:textStyle="bold"
+            android:text="Registrar" />
 
     </LinearLayout>
 

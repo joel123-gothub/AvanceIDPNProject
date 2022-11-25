@@ -11,12 +11,11 @@
         android:id="@+id/tabMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tlInicio"
+            android:id="@+id/tlInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inicio" />
+            android:text="Informacion" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tlRegistrar"
@@ -28,13 +27,9 @@
             android:id="@+id/tlEstadisticas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Graficos" />
+            android:text="Estadísticas" />
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tlInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Info" />
+
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

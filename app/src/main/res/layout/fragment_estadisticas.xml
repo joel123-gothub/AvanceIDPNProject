@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.FragmentEstadisticas">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="mada" />
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="376dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Plasticos Usados"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="580dp"
+        android:text="Leyenda"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="122dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
